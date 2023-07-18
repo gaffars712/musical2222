@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Music</title>
+    <Style>
+        .search { width: 40%; margin-top: 2%; float: right; }
+        .Vertical_list {  color: black; font-size: 16px; margin: 1% 2% 0 2%; text-decoration-line: none; }
+        .Trending_song { padding-left: 5%;}
+        .trending {margin-left: 20px; margin-right: 20px;}
+        .trending:hover{color: red;}
+        
+        .Vertical_list:hover{ color: blue;}
+        .Vertical_list:active {color: red;}
+        body {background-color: #f8f6f6;}
+        .imgfoter {margin-left: 30%; }
+        footer {background-image: url(data:image/jpeg;base64,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); background-repeat: no-repeat; background-position: top; background-color: #f5f2f2;}
+        .hover1:hover{color: green;}
+        .hover2:hover{color: blue;}
+        .hover2:active,.hover1:active {color: red;}
+        #heder {}
+        img:hover{ box-shadow: 2px 2px 20px black; opacity: 1.9; transition: all 1s; transition: linear;/* transform: translate(100px,200px);*/}
+        img:active {opacity: 2; transform: ;}
+
+
+        
+             
+
+
+
+
+    </Style>
+</head>
+
+<body><div id="heder">
+    <img id="gotop" src="data:image/jpeg;base64,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" alt="musical icon" width="3.3%"> <a href="Music.html"><il style="vertical-align: top;  text-decoration-line:overline;   font-size: 30px;  " >Musical Boy</il></a>    <label style="font-size: 18px; margin-left: 36%; "  for="search"> Search</label> <input class="search" name="search" type="search" placeholder="Search Song">
+    <hr><p style="text-shadow: 0 0 0px red; color: blue;" >
+    <il style="margin: 2% 2% 0% 2%;" ><a href="singin.html" style="text-decoration-line: none;">Log In</a></il> | <il style="margin: 2% 2% 0% 2%;"   > <a href="signup.html"style="text-decoration-line: none;">SignUp</a></il></p>
+    <hr>
+    <il > <a  class="Vertical_list" href="Music.html">All </a> | </il>  <il><a class="Vertical_list" href="#">Trending Songs</a>  | </il> <il><a class="Vertical_list" href="#">New Songs</a>  | </il> <il><a href="#" class="Vertical_list"> Old Songs</a>  |  </il> <il><a class="Vertical_list" href="#">Album</a>  | </il> <il><a class="Vertical_list" href="#">Radio</a>  | </il><il><a class="Vertical_list" href="#">Workout</a>  | </il><il><a class="Vertical_list" href="#">My Songs</a>   </il> <input list="Option" ><datalist id="Option" style=" float: right; "><option>Dance</option> <option>friendship</option><option>Weddin</option><option>Stars</option></datalist></div>
+    <hr>
+    <h1 class="Trending_song"> Salman's Songs</h1>
+    <table  style="width: 15%; text-align: center; border-spacing: 10px; margin: 0 0 0 2% ; ">
+        <tr >
+            <td class="hover2"> <a href="https://youtu.be/abiL84EAWSY"><img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqgo3yQ/Z9bq1A9Dby/size_l.webp" alt="song img" width="200px" ></a> Sultan </td> 
+            <td class="hover2"> <a href="https://youtu.be/abiL84EAWSY"> <img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/BZgWoQOK2d/ZgWo4D5b2d/size_l.webp" width="200px" alt="song img"></a> Ek Tha Tiger </td>
+            <td class="hover2"> <a href="https://youtu.be/abiL84EAWSY"> <img class="trending" src="https://www.pagalworld.us/_big/bajrangi-bhaijaan-2015-250.jpg" alt="song img" width="200px"></a>Bajrangi Bhaijaan</td>
+            <td class="hover2"> <a href="https://youtu.be/abiL84EAWSY"> <img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/Dk9KN2KBx1/9KNky7l23B/size_m.jpg" alt="salmanimg"></a> Kisi Ka Bhai Kisi Ki Jan</td>
+        
+        </tr>
+    </table><hr>
+    <h1 class="Trending_song"> Sharukh Khan's Songs </h1>
+    <table style="width: 15px; text-align: center; border-spacing: 10px; margin: 0 0 0 2%;">
+        <tr>
+            <td class="hover2"> <a href="pathan_song.html"> <img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/a7LWBaz3zX/LWBkQx9Dbz/size_l.jpg" alt="song ing" width="200px" ></a>Pathan 2023</td>     
+            <td class="hover2"> <a href="Dilwale_songs.html"> <img class="trending" src="https://www.pagalworld.us/_big/dilwale-2015-250.jpg" width="200px" alt="song img"></a> Dilwale </td>
+            <td class="hover2" > <a href="Raees_song.html"> <img class="trending" src="https://www.pagalworld.tv/GpE34Kg9Gq/11602/thumb-raees-2017-mp3-songs11-300.jpg" width="200px" height="200px"  alt="song img"> </a>First Love</td>
+            <td class="hover2"> <a href="#"> <img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/oAJbDlbnL8/JbDEGDzDKn/size_m.jpg" alt="song img"> </a>Sab Gazab</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1 class="Trending_song"> Romance</h1>
+    <table style="width: 15px; text-align: center; border-spacing: 10px; margin: 0 0 0 2%;">
+        <tr>
+            <td class="hover2"> <a href="mimi_songs.html"> <img class="trending" src="https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/V3dldLBE3R/size_m.webp" alt="song igm"></a> MIMI song's</td>        
+            <td class="hover2"> <a href="Pushpa_song.html"> <img class="trending" src="https://www.pagalworld.tv/GpE34Kg9Gq/113563/thumb-pushpa-2021-hindi-mp3-songs-300.jpg" alt="song img" width="200px"> </a> Pushpa - The Rise Hindi </td>  
+            <td class="hover2"> <a href="#"> <img class="trending" src="https://a10.gaanacdn.com/gn_pl_img/playlists/kGxbnw0Ky4/xbnwAyeVKy/size_m_1664444046.webp" alt="song img"></a>Love Hits  </td>  
+            <td class="hover2"> <a href="#"> <img class="trending" src="https://a10.gaanacdn.com/gn_pl_img/playlists/JD2KJyAbOL/2KJyyL4ObO/size_m_1651650666.webp" alt="song igm"></a>Bollywood Love</td> 
+
+        </tr>
+    </table>
+    <hr>
+    <h1 class="Trending_song"> Radio    </h1><br>
+    <table  style="width: 15px; text-align: center; border-spacing: 10px; margin: 0 0 0 2%;">
+        <tr>
+            <td class="hover2" class="radio"> <a href="#"> <img style=" border-radius:110px ;"  class="trending" src="https://a10.gaanacdn.com/gn_img/g_radio_circle/kGxbnw0Ky4/kGxbnxJ3y4/size_m_1643619328.webp" alt="song img" ></a> Love Hits  </td>  
+            <td class="hover2"> <a href="#"> <img style=" border-radius:110px ;" class="trending" src="https://a10.gaanacdn.com/gn_img/g_radio_circle/qa4WEqWP1p/qa4WEm8WP1/size_m_1643616033.webp" alt="song img"></a> Love Songs (Punjabi)</td>
+            <td class="hover2"> <a href="#"> <img style=" border-radius:110px ;" class="trending" src="https://a10.gaanacdn.com/gn_img/g_radio_circle/DwPKOxB3qV/DwPKOwkKqV/size_m_1643620296.webp" alt="song img"></a>Party Non Stop</td>
+            <td class="hover2"> <a href="#"> <img style=" border-radius:110px ;" class="trending" src="https://a10.gaanacdn.com/gn_img/g_radio_circle/2lV3dl13Rg/2lV3dGZKRg/size_m_1643700049.webp" alt="song igm"></a> 90s & 2000s</td> 
+                   
+        </tr>
+    </table>
+
+        <h1 style="text-align: center; "> Bas Bajna Cahiye Music </h1>
+        <p style="text-align: center; margin: 0 15%;">Music is the one-stop solution for all your music needs. Music offers you free, unlimited access to over 30 million Hindi Songs, Bollywood Music, English MP3 songs, Regional Music & Mirchi Play.</p>
+<hr><h1 style="text-align: center; background-color: #f5f2f2; margin-bottom: 0; font-family: Arial Black; "><b>Contact Us</b></h1>
+    <footer><br><br>
+        
+        
+        <a href="#" class="imgfoter"> <img style="width: 5%; border-radius: 100px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAkFBMVEU6WpguSHr///8AJGf09fc3WJdIZZ0yTYMgPnUoRHgrRnk/VYItUpRJXIbBxtIrUJOMmryHkqsMNXDn6vCGlrtgd6dFYp2eq8hsepqyvNPS1+QMQYxQaqAgSpDe4uymscxXaI6rssSdprsAPIptga6+xdeEkbAVO3mQmrIAK2p5haNoeqMAGWRHYJMAE2E3T38Kg86bAAADVUlEQVRoge3bXXeiMBAG4ISSghSbrSiWIFrdtlvd7vb//7vFrwohIMkkw8X6XnlOz+HpGBIIOMSrRmTTWUrcJJ1NM1HTyOVjMmecx4w5shmLOWfzRGH7pexIrabUfdkWC+6q4HoYX4i6nRU48kEvsqq9ytHkffLVxc5w6RLPzrYokGlCCnG0/QXeWJ/DFv7BnmPMLTl8vrcTZ6tJVxhLSnuQsg+FE2+IqvdhHhHDlF0WLkg2mJ2RaTyQHU/JbLDxnpF0MNvVTcot/1HYMegsz3/ydLG4v0/jIi9TIC1dLE+n2bJ6B+4vxQqj/rh4Fb7XCMYlms9EE8axi5VSxrBzddEYdr5so53bxVsr7drm7+20Y5s9KKYWkv1r3UG7tYPOsp3aQfjRRbu0A7ptn19u7YBG3V+5OzugdLRrev7jx+75lN/uaBpuGvQm2oajUwKHNJ08yvTThH4ncCMfabqVryLJJxZNt4lkf4RYNL2TT/PnERbdtMcRFt20HyIsutVGoNtsDLrFRqHVNg6ttJFolY1FK2w0umn/cXnlKq+blfyV7ZTH1dj6T07011MlO9n+UY+lB+QnejT2NPJqxT6PtZ5tpe7v00zL9u8t2JczXMteErhdmVxatoVH5NV5rWW/gd9B1ZYULRv8RqS+mmnZ0Mfz0kKqZQOnmLyGa9lWq9azfbu0lr2E7EKbtJYNmd4KWssGvAFT0Vr23HiKKWlKo+q9w6d8/f6q/tV4tFvoelr3RBRyq9yL7rJd0x22c7rDdk472If2plttBNr6PlSDtr0P1aEt70O1aKWNRKtsLFphu13DO23jjYg2bc/Wp63ZBrQt24S2ZBvRdmwz2optSNuwTWkLtjENt81psA2goTaEBtogGmbDaJANpEE2kL7ZN7u3/RVdP74Tm6XkZTB7Rt5H14/vxI6nZB1eP74Tm2dEDGYL4kWwAZ88Sun9E2ePeJvJdaATr6dvc9Ch3yABnuj19C362GcBLtyEPvWXeP4YOM0M6HNfjSdsFd6b/u4n8rz1HTJ96aMqh9wGrkFX+sfKyifgMe8tS31z5ZiPgYPeW270C5Zn+yaaAGZ6X7pQ9EmWSTZRGI7Mltg+Be/7Q4myP/T4za/fX0xuJvpUvO+Lrf+k8x8ShkcPG9mT9AAAAABJRU5ErkJggg=="></a>    <a href="#" class="imgfoter" ><img style=" width: 5%; border-radius: 100px;" src="data:image/png;base64,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"></a>
+    <br><br>
+        <form style="color: red; background-color: #f5f2f2; text-align: center;"><fieldset><br>
+            <legend>Comment</legend>
+            <h1 style="text-align: center;"> <b>Comment Box</b></h1>
+            <label for="email">Mail :-</label>
+            <input style="width: 17%;" id="email" type="email" placeholder="Enter Your Email" required><br><br>
+            <label for="text" > Comment :-</label>
+            <input type="textaria" id="text" style="width: 20%;" required><br><br>
+            <input style="width: 28.5%;" type="submit" value="Comment" ><br><br><br>
+        </fieldset><br>
+        <a href="#gotop" style="text-decoration: none;" class="hover1"> &uarr; Go Up &uarr;	</a><br><br>
+
+        </form>
+    
+    
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
